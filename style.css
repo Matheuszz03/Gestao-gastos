@@ -1,0 +1,53 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #212121;
+}
+#container {
+    width: 80%;
+    margin: 0 auto;
+    background-color: #151818;
+    padding: 50px;
+    color: white;
+    border-radius: 5px;
+}
+h1 {
+    text-align: center;
+}
+#despesas {
+    border-collapse: collapse;
+    width: 100%;
+}
+#despesas th, #despesas td {
+    border: 1px solid #ddd;
+    padding: 8px;
+    text-align: left;
+}
+#despesas th {
+    background-color: #3a3d12;
+}
+#adicionarDespesa {
+    margin-top: 20px;
+}
+#saldo {
+    text-align: center;
+    margin-top: 20px;
+}
+
+
+.blue {
+    color: blue;
+}
+
+button {
+    padding: 5px;
+    background-color: rgb(165, 165, 2);
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+input {
+    background-color: gray;
+    color: white;
+    margin-left: 10px;
+}
+

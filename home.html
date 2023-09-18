@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gestão de Gastos Pessoais</title>
+    <link rel="stylesheet" href="style.css">
+  
+</head>
+<body>
+    <div id="container">
+        <h1>Gestão de Gastos Pessoais</h1>
+        
+        <h2>Adicionar Registro</h2>
+        <form id="adicionarDespesa">
+            <label for="descricao">Descrição:</label>
+            <input type="text" id="descricao" required><br><br>
+            <label for="valor">Valor (adicionar - se for gasto):</label>
+            <input type="number" id="valor" required><br><br>
+            <label for="data">Data:</label>
+            <input type="date" id="data" required><br><br>
+            <label for="categoria">Categoria:</label>
+            <select id="categoria">
+                <option value="estudos">Estudos</option>
+                <option value="viagens">Viagens</option>
+                <option value="lazer">Lazer</option>
+                <option value="trabalho">Trabalho</option>
+                <option value="necessidades">Necessidades</option>
+            </select><br><br>
+
+            <button type="submit">Adicionar</button>
+        </form>
+
+        <h2>Filtrar</h2>
+        <label for="filtroCategoria">Filtrar por Categoria:</label>
+        <select id="filtroCategoria">
+            <option value="">Todas</option>
+            <option value="estudos">Estudos</option>
+            <option value="viagens">Viagens</option>
+            <option value="lazer">Lazer</option>
+            <option value="trabalho">Trabalho</option>
+            <option value="necessidades">Necessidades</option>
+        </select>
+
+<button id="aplicarFiltroCategoria">Aplicar Filtro</button>
+
+
+        <h2>Lista de Despesas</h2>
+        <table id="despesas">
+            <thead>
+                <tr>
+                    <th>Descrição</th>
+                    <th>Valor</th>
+                    <th>Data</th>
+                    <th>Categoria</th>
+                </tr>
+            </thead>
+            <tbody></tbody>
+        </table>
+
+        <div id="saldo">
+            <h2>Saldo</h2>
+            <p>Entrou: R$ <span style="color: green;" id="dinheiroEntrou">0.00</span></p>
+            <p>Saiu: R$ <span style="color: red;" id="dinheiroSaiu">0.00</span></p>
+            <p>Saldo Final: R$ <span id="saldoTotal">0.00</span></p>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
